@@ -1,0 +1,22 @@
+.textarea {
+	display: block;
+	cursor: pointer;
+	width: 600px;
+	height: 80px;
+	margin: 0 auto;
+	font-size: 18px;
+	resize: vertical;
+	border: none;
+	border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+	overflow: scroll;
+}
+
+.textarea:hover {
+	border-color: rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease-in-out;
+}
+
+.textarea:focus {
+	outline: none;
+	border-color: #000;
+}

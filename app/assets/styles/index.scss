@@ -1,0 +1,44 @@
+.main-form {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 40px;
+	resize: vertical;
+	outline: none;
+	border-width: 2px;
+	border-radius: 2px;
+	font-size: 18px;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	border: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(138, 138, 138, 0.3);
+	width: 100%;
+	line-height: 1.65;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #222;
+	font-weight: 300;
+	font-size: 18px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+input:hover {
+	border-color: rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease-in-out;
+}
+
+input:focus {
+	outline: none;
+	border-color: #000;
+}
+
+.red {
+	color: red;
+	border-color: red;
+}
