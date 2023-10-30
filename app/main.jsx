@@ -11,7 +11,9 @@ import TextArea from './components/ui/textArea/TextArea.jsx';
 
 export const showPopup = () => {
 	const popup = document.getElementsByClassName('popup')[0];
+	const body = document.querySelector('body');
 	popup.classList.add('show');
+	body.style.overscrollBehavior = 'contain';
 };
 
 ReactDOM.createRoot(document.getElementById('app')).render(
