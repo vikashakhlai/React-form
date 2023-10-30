@@ -42,3 +42,41 @@ input:focus {
 	color: red;
 	border-color: red;
 }
+
+.popup {
+	position: fixed;
+	width: 320px;
+	top: 0;
+	right: 0;
+	background-color: white;
+	z-index: 10000;
+	filter: drop-shadow(0 0 0.4rem black);
+	opacity: 0;
+}
+
+.popupCloseBtn {
+	width: 20px;
+	height: 20px;
+	margin: 4px 4px 0 300px;
+	text-align: right;
+}
+
+.popup-close-btn {
+	cursor: pointer;
+}
+
+.popup.show {
+	opacity: 1;
+}
+
+.button-modal {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px black solid;
+	border-radius: 30px;
+	padding: 8px 20px;
+	background-color: #fff;
+	font-size: 18px;
+}

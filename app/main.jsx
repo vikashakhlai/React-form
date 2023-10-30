@@ -4,7 +4,15 @@ import InputMask from 'react-input-mask';
 import './assets/styles/index.scss';
 import Button, { refresh } from './components/ui/button/Button.jsx';
 import Input from './components/ui/input/Input.jsx';
+import Modal from './components/ui/modal/Modal.jsx';
 import TextArea from './components/ui/textArea/TextArea.jsx';
+
+// import { showPopup } from './components/ui/modal/Modal.jsx';
+
+export const showPopup = () => {
+	const popup = document.getElementsByClassName('popup')[0];
+	popup.classList.add('show');
+};
 
 ReactDOM.createRoot(document.getElementById('app')).render(
 	<>
@@ -20,9 +28,12 @@ ReactDOM.createRoot(document.getElementById('app')).render(
 				placeholder='Enter number'
 				name='phone'
 			/>
-			{/* <textarea placeholder='Enter message' /> */}
 			<TextArea id='message' name='message' placeholder='Enter message' />
 			<Button type='input' text='Send' />
 		</form>
+		<Modal />
+		<button className='button-modal' onClick={() => showPopup()}>
+			модальное окно уведомления
+		</button>
 	</>
 );
