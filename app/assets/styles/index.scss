@@ -63,6 +63,28 @@ input:focus {
 
 .popup-close-btn {
 	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	clip-path: polygon(
+		20% 0%,
+		0% 20%,
+		30% 50%,
+		0% 80%,
+		20% 100%,
+		50% 70%,
+		80% 100%,
+		100% 80%,
+		70% 50%,
+		100% 20%,
+		80% 0%,
+		50% 30%
+	);
+}
+
+.popup-close-btn:hover {
+	background-color: red;
+	transition: all 0.4s ease-in-out;
 }
 
 .popup.show {
@@ -71,6 +93,7 @@ input:focus {
 
 .button-modal {
 	display: flex;
+	cursor: pointer;
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;
@@ -79,4 +102,10 @@ input:focus {
 	padding: 8px 20px;
 	background-color: #fff;
 	font-size: 18px;
+}
+
+.button-modal:hover {
+	border-color: red;
+	color: red;
+	transition: all 0.5s ease-in-out;
 }

@@ -8,11 +8,12 @@ export const closePopup = () => {
 const Modal = () => {
 	return (
 		<div className='popup'>
-			<img
+			{/* <img
 				className='popup-close-btn'
 				src='../../../assets/images/close.svg'
 				onClick={() => closePopup()}
-			/>
+			/> */}
+			<div className='popup-close-btn' onClick={() => closePopup()}></div>
 			<h4>Уведомление</h4>
 			<p>Текст</p>
 		</div>
